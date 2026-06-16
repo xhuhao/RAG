@@ -1,0 +1,27 @@
+# Flask框架
+Flask==3.0.0
+flask-cors==4.0.0
+flask-sqlalchemy==3.1.1
+
+# 数据库
+pymysql==1.1.0
+SQLAlchemy==2.0.23
+
+# RAG相关
+langchain==0.3.7
+langchain-community==0.3.7
+langchain-core==0.3.19
+chromadb==0.5.23
+ollama==0.4.2
+pypdf==5.1.0
+tiktoken==0.8.0
+
+# 爬虫相关
+beautifulsoup4==4.12.3
+lxml==5.1.0
+
+# 工具
+requests==2.31.0
+
+# 日志
+loguru==0.7.2
