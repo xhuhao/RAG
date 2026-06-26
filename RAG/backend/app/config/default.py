@@ -31,12 +31,13 @@ class Config:
     OLLAMA_PORT = 11434
     OLLAMA_MODEL = 'qwen3-embedding:4b'
 
-    # Deepseek LLM配置
-    DEEPSEEK_API_KEY = 'sk-7711c3d839284441b33737da4256e6f0'
-    DEEPSEEK_MODEL = 'deepseek-v4-pro'
-    DEEPSEEK_TEMPERATURE = 0.2
-    DEEPSEEK_MAX_TOKENS = 1024
-    DEEPSEEK_TOP_P = 0.9
+    # LLM配置 (mimov2.5)
+    LLM_API_KEY = 'sk-cv3c0g0f4v2lzn48dmeqyupdhks79i0roym3hkvz81l9hc8f'
+    LLM_BASE_URL = 'https://api.xiaomimimo.com/v1'
+    LLM_MODEL = 'mimo-v2.5'
+    LLM_TEMPERATURE = 0.1
+    LLM_MAX_TOKENS = 2048
+    LLM_TOP_P = 0.9
 
     # 多轮对话配置
     MAX_HISTORY_TURNS = 20

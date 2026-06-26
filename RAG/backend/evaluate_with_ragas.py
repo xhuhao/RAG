@@ -164,14 +164,14 @@ def run_ragas_evaluation():
         from langchain_community.embeddings import OllamaEmbeddings
         from ragas.embeddings import LangchainEmbeddingsWrapper
 
-        # 创建OpenAI客户端（兼容Deepseek）
+        # 创建OpenAI客户端（使用mimo-v2.5-pro）
         client = OpenAI(
-            api_key="sk-7711c3d839284441b33737da4256e6f0",
-            base_url="https://api.deepseek.com/v1"
+            api_key="sk-cv3c0g0f4v2lzn48dmeqyupdhks79i0roym3hkvz81l9hc8f",
+            base_url="https://api.xiaomimimo.com/v1"
         )
 
         # 创建RAGas LLM（设置较大的max_tokens）
-        ragas_llm = llm_factory("deepseek-chat", client=client, max_tokens=8192)
+        ragas_llm = llm_factory("mimo-v2.5-pro", client=client, max_tokens=8192)
 
         # 创建嵌入模型（使用Ollama的qwen3-embedding:4b）
         ollama_embeddings = OllamaEmbeddings(

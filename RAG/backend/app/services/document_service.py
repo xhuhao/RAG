@@ -13,8 +13,8 @@ from app.models.document import Document
 from app.services.rag_service import add_document_to_chroma, delete_document_from_chroma
 
 # 文档分块配置
-CHUNK_SIZE = 1000  # 每块1000字符
-CHUNK_OVERLAP = 200  # 重叠200字符
+CHUNK_SIZE = 800  # 每块800字符
+CHUNK_OVERLAP = 300  # 重叠300字符
 
 def save_uploaded_file(file, upload_folder):
     """
